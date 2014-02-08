@@ -21,7 +21,7 @@ Call .blockClicker() on block element. Note that the call must be made inside of
 
 ```javascript
 $(document).ready(function(){
-  $('.feed-econ').blockClicker({
+  $('.feed-items li').blockClicker({
     link: 'h4 a'
   });
 });
