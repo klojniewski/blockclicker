@@ -10,8 +10,6 @@
         this.element        =   element;
         this.$element       =   $(this.element);
         this.settings       =   $.extend({}, defaults, options);
-        this.$firstInput    =   $(this.settings.firstFieldSelector);
-        this.$secondInput   =   $(this.settings.secondFieldSelector);
         this.init();
     }
     Plugin.prototype = {
