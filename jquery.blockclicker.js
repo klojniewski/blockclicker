@@ -19,7 +19,8 @@
             this.$element.on('click', function (e) {
                 if ($(e.target).is(that.settings.link)) {
                     if (that.settings.target) {
-                        var newWindow = window.open($(e.target).attr('url'), $(e.target).attr('target'));
+                        e.preventDefault();
+                        var newWindow = window.open($(e.target).attr('href'), $(e.target).attr('target'));
                         newWindow.focus();
                     }
                 } else {
